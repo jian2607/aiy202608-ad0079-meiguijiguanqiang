@@ -1,0 +1,23 @@
+{
+  "version": "2026-08-05.2",
+  "provider": "baostock",
+  "allowed_quarters": [1, 2, 3],
+  "data_source": "baostock",
+  "amount_unit": "元",
+  "revenue_magnitude_warning_threshold": 1000000,
+  "unavailable_metrics": ["goodwill_equity_ratio", "cash_short_debt_ratio", "deducted_net_profit_margin"],
+  "unscorable_groups": ["impairment"],
+  "default_sample_pool": ["sh.600519", "sz.000858", "sh.600887", "sz.000333", "sz.000651", "sh.600031", "sz.002594", "sz.300750", "sh.600276", "sz.002415"],
+  "sample_metadata": {
+    "sh.600519": {"name": "贵州茅台", "industry": "食品饮料", "board": "主板"},
+    "sz.000858": {"name": "五粮液", "industry": "食品饮料", "board": "主板"},
+    "sh.600887": {"name": "伊利股份", "industry": "食品饮料", "board": "主板"},
+    "sz.000333": {"name": "美的集团", "industry": "家用电器", "board": "主板"},
+    "sz.000651": {"name": "格力电器", "industry": "家用电器", "board": "主板"},
+    "sh.600031": {"name": "三一重工", "industry": "机械设备", "board": "主板"},
+    "sz.002594": {"name": "比亚迪", "industry": "汽车", "board": "主板"},
+    "sz.300750": {"name": "宁德时代", "industry": "电力设备", "board": "创业板"},
+    "sh.600276": {"name": "恒瑞医药", "industry": "医药生物", "board": "主板"},
+    "sz.002415": {"name": "海康威视", "industry": "电子", "board": "主板"}
+  }
+}

@@ -1,0 +1,1 @@
+{"version":"2026-08-05.1","provider":"deepseek","base_url":"https://api.deepseek.com","model":"deepseek-v4-flash","api_key_env":"DEEPSEEK_API_KEY","temperature":0,"timeout_seconds":75,"max_retries":3,"initial_backoff_seconds":2,"max_backoff_seconds":12,"request_interval_seconds":0.5,"prompt_version":"risk-explanation.2","evidence_score_threshold":40}

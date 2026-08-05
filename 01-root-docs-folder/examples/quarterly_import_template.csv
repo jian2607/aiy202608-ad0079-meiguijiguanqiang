@@ -1,0 +1,2 @@
+ts_code,company_name,industry,board,comp_type,report_period,ann_date,total_assets,total_liabilities,equity,current_assets,current_liabilities,inventory,accounts_receivable,cash,short_term_debt,current_portion_long_term_debt,revenue,operating_cost,net_profit,operating_cashflow,goodwill,ebit,interest_expense,audit_opinion
+600101.SH,导入季度样本,机械设备,主板,一般企业,2025-03-31,2025-04-25,1000,520,480,600,300,150,120,180,80,20,220,154,18,21,20,27,4,标准无保留意见

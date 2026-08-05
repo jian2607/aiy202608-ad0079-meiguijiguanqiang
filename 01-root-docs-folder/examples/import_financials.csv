@@ -1,0 +1,4 @@
+ts_code,company_name,industry,board,comp_type,report_period,ann_date,total_assets,total_liabilities,equity,current_assets,current_liabilities,inventory,accounts_receivable,cash,short_term_debt,current_portion_long_term_debt,revenue,operating_cost,net_profit,operating_cashflow,goodwill,ebit,interest_expense,audit_opinion
+600101.SH,导入样本正常,机械设备,主板,一般企业,2025-12-31,2026-04-25,1000,520,480,600,300,150,120,180,80,20,900,630,72,82,20,108,18,标准无保留意见
+600102.SH,导入样本承压,机械设备,主板,一般企业,2025-12-31,2026-04-25,1200,930,270,680,560,300,500,80,350,80,850,730,-45,-70,230,5,35,保留意见
+300101.SZ,导入样本重大风险,软件服务,创业板,一般企业,2025-12-31,2026-04-25,700,760,-60,350,480,20,420,30,260,90,300,220,-80,-100,120,-20,20,无法表示意见

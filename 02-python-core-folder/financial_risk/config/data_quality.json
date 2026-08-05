@@ -1,0 +1,16 @@
+{
+  "version": "2026-08-05.2",
+  "required_fields": ["ts_code", "report_period", "total_assets", "total_liabilities", "equity", "revenue", "net_profit", "operating_cashflow"],
+  "identifier_fields": ["ts_code", "report_period"],
+  "minimum_core_completeness": 0.9,
+  "maximum_balance_sheet_difference": 0.05,
+  "warning_balance_sheet_difference": 0.01,
+  "block_on_error": true,
+  "source_profiles": {
+    "baostock": {
+      "required_fields": ["ts_code", "report_period", "ann_date", "debt_ratio", "current_ratio", "quick_ratio", "gross_margin", "net_margin", "receivable_days", "inventory_days", "ocf_net_profit_ratio", "revenue", "net_profit"],
+      "identifier_fields": ["ts_code", "report_period"],
+      "allowed_statement_types": ["Q1", "H1", "Q3"]
+    }
+  }
+}

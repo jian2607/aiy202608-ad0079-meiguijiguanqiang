@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financial-risk-assessment"
+version = "0.4.0"
+description = "Modular, explainable financial-risk assessment model"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[project.scripts]
+financial-risk = "financial_risk.cli:main"
+
+[project.optional-dependencies]
+baostock = ["baostock>=0.8"]
+web = ["Flask>=3.0,<4"]
+
+[tool.unittest]
+start-directory = "tests"
+
+[tool.setuptools.package-data]
+financial_risk = ["config/*.json"]
+
+[tool.setuptools.packages.find]
+include = ["financial_risk*"]

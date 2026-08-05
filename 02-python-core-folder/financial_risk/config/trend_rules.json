@@ -1,0 +1,1 @@
+{"version":"2026-08-05.1","stable_score":0,"magnitude_bands":[{"upper":5,"score":15},{"upper":15,"score":40}],"magnitude_top_score":70,"consecutive_tiers":[{"minimum_periods":2,"score":85,"mode":"at_least"},{"minimum_periods":3,"score":100,"mode":"override"}]}

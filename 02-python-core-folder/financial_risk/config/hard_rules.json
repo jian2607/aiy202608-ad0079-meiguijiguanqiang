@@ -1,0 +1,45 @@
+{
+  "version": "2026-08-05.2",
+  "rules": [
+    {
+      "id": "FIN_001",
+      "label": "年度营业收入偏低且净利润为负",
+      "score": 85,
+      "review_required": true,
+      "note": "阈值按年度口径校准，仅在年报（FY）上评估；季报累计数不适用。",
+      "conditions": [
+        {"field": "statement_type", "operator": "eq", "value": "FY"},
+        {"field": "revenue", "operator": "lt", "value": 100000000},
+        {"field": "net_profit", "operator": "lt", "value": 0}
+      ]
+    },
+    {
+      "id": "FIN_002",
+      "label": "期末净资产为负",
+      "score": 85,
+      "review_required": false,
+      "note": "需要净资产绝对值，仅在提供该科目的导入数据上评估。",
+      "conditions": [{"field": "equity", "operator": "lt", "value": 0}]
+    },
+    {
+      "id": "FIN_003",
+      "label": "资产负债率超过100%（净资产为负的等价条件）",
+      "score": 85,
+      "review_required": false,
+      "note": "在只提供比率、不提供净资产绝对值的数据源上作为FIN_002的等价替代；与FIN_002同时命中属正常。",
+      "conditions": [{"field": "debt_ratio", "operator": "gt", "value": 1}]
+    },
+    {
+      "id": "FIN_004",
+      "label": "前三季度累计营业收入偏低且累计净利润为负",
+      "score": 70,
+      "review_required": true,
+      "note": "FIN_001在无年报数据源下的近似替代。阈值75000000为1亿元的三季度等比折算，未考虑季节性，结论必须由研究人员按年度口径复核。",
+      "conditions": [
+        {"field": "statement_type", "operator": "eq", "value": "Q3"},
+        {"field": "revenue", "operator": "lt", "value": 75000000},
+        {"field": "net_profit", "operator": "lt", "value": 0}
+      ]
+    }
+  ]
+}

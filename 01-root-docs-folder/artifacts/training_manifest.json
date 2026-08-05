@@ -1,0 +1,16 @@
+{
+  "mode": "train",
+  "created_at": "2026-08-04T10:04:51.544123+00:00",
+  "input_file": "examples/historical_financials.csv",
+  "input_sha256": "a463adcc441352fc0ca5a724ea89db1404824b0e42e1646899c67222c70ec1b1",
+  "record_count": 12,
+  "quality_issue_count": 0,
+  "versions": {
+    "metric_rules": "2026-08-04.1",
+    "weights": "2026-08-04.1",
+    "synergy_rules": "2026-08-04.1",
+    "field_mapping": "2026-08-04.1",
+    "ai": "2026-08-04.1",
+    "reference": "robust-reference.1"
+  }
+}

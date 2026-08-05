@@ -1,0 +1,19 @@
+{
+  "version": "2026-08-05.1",
+  "metrics": {
+    "debt_ratio": {"label":"资产负债率","group":"solvency","peer_direction":"high","anchors":[[0,20],[0.2,10],[0.4,0],[0.6,0],[0.7,25],[0.8,60],[0.9,80],[1,100]]},
+    "current_ratio": {"label":"流动比率","group":"solvency","peer_direction":"low","anchors":[[0,100],[0.7,80],[1,55],[1.2,30],[1.5,0],[2,0],[3,10],[5,25]]},
+    "quick_ratio": {"label":"速动比率","group":"solvency","peer_direction":"low","anchors":[[0,100],[0.3,85],[0.5,60],[0.8,0],[1,0],[1.5,10],[3,20]]},
+    "interest_coverage": {"label":"利息保障倍数","group":"solvency","peer_direction":"low","anchors":[[0,100],[1,85],[1.5,60],[2,40],[3,0],[10,0]]},
+    "cash_short_debt_ratio": {"label":"现金短债比","group":"solvency","peer_direction":"low","anchors":[[0,100],[0.2,85],[0.5,60],[0.8,30],[1,0],[3,0]]},
+    "gross_margin": {"label":"毛利率","group":"profit_quality","peer_direction":"low","anchors":[[-0.5,100],[0,80],[0.1,55],[0.15,30],[0.2,0],[0.4,0],[1,0]]},
+    "net_margin": {"label":"净利率","group":"profit_quality","peer_direction":"low","anchors":[[-0.5,100],[-0.15,100],[-0.05,80],[0,55],[0.05,0],[0.15,0],[1,0]]},
+    "deducted_net_profit_margin": {"label":"扣非净利率","group":"profit_quality","peer_direction":"low","anchors":[[-0.5,100],[-0.15,100],[-0.05,80],[0,55],[0.05,0],[0.15,0],[1,0]]},
+    "revenue_growth": {"label":"营业收入增长率","group":"profit_quality","peer_direction":"low","anchors":[[-1,100],[-0.3,90],[-0.1,65],[0,45],[0.05,20],[0.15,0],[1,0]]},
+    "ocf_net_profit_ratio": {"label":"经营现金流/净利润","group":"profit_quality","peer_direction":"low","anchors":[[-1,100],[0,80],[0.5,50],[0.8,0],[1.2,0],[5,0]]},
+    "receivable_revenue_ratio": {"label":"应收账款/营业收入","group":"operations","peer_direction":"high","anchors":[[0,0],[0.3,0],[0.4,25],[0.5,50],[0.7,80],[1,100]]},
+    "receivable_days": {"label":"应收账款周转天数","group":"operations","peer_direction":"high","anchors":[[0,0],[90,0],[120,25],[180,55],[270,85],[365,100]]},
+    "inventory_days": {"label":"存货周转天数","group":"operations","peer_direction":"high","anchors":[[0,0],[120,0],[150,25],[210,55],[365,85],[730,100]]},
+    "goodwill_equity_ratio": {"label":"商誉/净资产","group":"impairment","peer_direction":"high","anchors":[[0,0],[0.3,0],[0.5,35],[0.8,70],[1,90],[1.5,100]]}
+  }
+}
